@@ -105,6 +105,7 @@ main {
     padding: 30px;
     width: 400px;
     visibility: hidden;
+    box-shadow: #9fa19f 0px 0px 20px 8px;
 }
 
 .active {
