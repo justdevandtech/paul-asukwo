@@ -35,16 +35,21 @@ nav .nav-links{
     list-style: none;
 }
 
+nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
 nav .nav-links li {
     margin-right: 10px;
     padding: 0px 10px;
-    border: 1px solid #9fa19f;
     border-radius: 5px;
     text-transform: capitalize;
 } 
 
 nav .nav-links li:hover{
-    background-color:  #9fa19f;
+    border-bottom: 2px solid #9fa19f;
 }
 
 
@@ -225,6 +230,18 @@ visibility: visible;
         color: red;
         z-index: 200;
     }
+
+    .describe-me {
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+
+    .contact-me-modal {
+        bottom: 40px;
+        height: 230px;
+        width: 70%;
+       
+    }
     
   
 
@@ -234,10 +251,11 @@ visibility: visible;
     position: absolute;
     right: 0;
     height: 92vh;
-    top: 11vh;
+    top: 19vh;
     background-color: #467a54;
     padding: 50px;
     visibility: hidden;
+    z-index: 2000;
 }
 
 .nav-active {
@@ -247,6 +265,8 @@ visibility: visible;
 .nav-links li {
     padding: 10px;
     margin-top: 20px;
+    justify-content: center;
+    text-align: center;
 }
     
 }
@@ -263,6 +283,14 @@ visibility: visible;
       width: 100%;
       margin: auto;
       margin-top: 30px;
+    }
+    .nav-links  {
+        border: none;
+    }
+
+    .nav-links {
+        width: 100%;
+       
     }
     
 }
