@@ -9,6 +9,7 @@ var projectItems = document.querySelectorAll(".project_item");
 var navLinks = document.querySelector(".nav-links");
 var opennavbtn = document.getElementById("opennavbtn");
 var closenavbtn = document.getElementById("closenavbtn");
+var aud = document.querySelector("audio");
 
 
 function copyRight_(params) {
@@ -19,20 +20,24 @@ function copyRight_(params) {
 copyRight_();
 
 contactBtn.addEventListener("click", ()=>{
+    aud.play();
 contactMeModal.classList.add("active")
 });
 
 closeBtn.addEventListener("click", ()=>{
+    aud.play();
     contactMeModal.classList.remove("active")
 });
 
 opennavbtn.addEventListener("click", ()=>{
+    aud.play();
     opennavbtn.style.display = "none"
     closenavbtn.style.display = "block";
     navLinks.classList.toggle("nav-active")
 });
 
 closenavbtn.addEventListener("click", ()=>{
+    aud.play();
     navLinks.classList.remove("nav-active");
     opennavbtn.style.display = "block";
     closenavbtn.style.display = "none";
