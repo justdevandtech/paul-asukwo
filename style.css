@@ -67,6 +67,7 @@ main {
 
 
 }
+/*****media query end here****/
 
 .mypic img {
         width: 300px;
@@ -78,6 +79,8 @@ main {
      margin-top: 50px;
      margin-left: 80px;
      position: relative;
+     border-left: #9fa19f solid 1px;
+     padding-left: 15px;
 
  }
 
@@ -158,6 +161,8 @@ visibility: visible;
 
 #skills {
     margin-top: 50px;
+    border: 1px solid #9fa19f;
+    padding: 10px;
 }
 
 #skills h1 {
@@ -349,6 +354,9 @@ visibility: visible;
 
 #project {
     margin-top: 40px;
+    border: 1px solid #9fa19f;
+    padding: 10px;
+    border-radius: 50px 0px 50px;
 }
 
 #project h1 {
