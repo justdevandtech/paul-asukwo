@@ -43,13 +43,6 @@ closenavbtn.addEventListener("click", ()=>{
     closenavbtn.style.display = "none";
 });
 
-/* for (let i = 0; i < projectItems.length; i++) {
-    const items = projectItems[i];
-    items.addEventListener("mouseover", ()=>{
-        projectLinks.classList.add("site_active")
-    })
-} */
-
 projectItems.forEach(function (stt) {
     var projectLinks = stt.querySelector(".site_links");
     stt.addEventListener("mouseover", ()=>{
@@ -61,13 +54,15 @@ projectItems.forEach(function (stt) {
     })
 });
 
-/* projectItems.forEach(items => {
-    var projectLinks = items.querySelector(".site_links");
-items.addEventListener("mouseover", ()=>{
-    projectLinks.classList.add("site_ative")
-})
-}); */
+const text = "Thanks for checking out my portfolio. Now, Let's connect!";
 
-/* projectItems.addEventListener("mouseover", ()=>{
-    projectLinks.classList.add("site_active")
-}) */
+let idx = 0;
+
+function autowritetext() {
+    var outtext = document.getElementById("outtext").innerText = text.slice(0, idx);
+    idx++;
+    if (idx > text.length) {
+        idx = 0;
+    }
+}
+setInterval(autowritetext, 300);
